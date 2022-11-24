@@ -1,0 +1,18 @@
+@mixin imgsize {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+@mixin font ($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
+@mixin pseudo {
+    &::selection {
+        background-color: aqua;
+    }
+}
+@mixin goflex {
+    display: flex;
+    justify-content: space-around;
+}

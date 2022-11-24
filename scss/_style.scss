@@ -1,0 +1,54 @@
+body {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    .s-1, .s-2, .s-3 {
+        margin-top: 100px;
+    }
+    img {
+    @include imgsize;
+    }
+}
+
+.s-1, .s-2 {
+    h2 {
+        @include font (45px, normal);
+        @include pseudo;
+    }
+    p {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        @include pseudo;
+        @include font (20px, normal);
+    }
+    .bali {
+        @include goflex;
+    }
+}
+
+.s-3 {
+    h2 {
+        @include font (45px, normal);
+    }
+    .cards {
+        @include goflex;
+        margin-top: 30px;
+        h3 {
+            margin-top: 10px;
+            text-align: center;
+            @include pseudo;
+            @include font (20px, bold);
+        }
+        .card1 {
+            width: 300px;
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+        .location, .phone, .envelope {
+            color: #5863f8;
+            margin-right: 10px;
+        }
+    }
+}
