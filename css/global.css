@@ -86,6 +86,12 @@ body img {
 .s-1 h2::selection, .s-2 h2::selection {
   background-color: aqua;
 }
+@media (max-width: 1000px) {
+  .s-1 h2, .s-2 h2 {
+    width: 80%;
+    text-align: center;
+  }
+}
 .s-1 p, .s-2 p {
   margin-top: 10px;
   margin-bottom: 30px;
@@ -98,14 +104,35 @@ body img {
 .s-1 p::selection, .s-2 p::selection {
   background-color: aqua;
 }
+@media (max-width: 1200px) {
+  .s-1 p, .s-2 p {
+    width: 90%;
+    text-align: center;
+  }
+}
 .s-1 .bali, .s-2 .bali {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 900px) {
+  .s-1 .bali, .s-2 .bali {
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 }
 
 .s-3 h2 {
   font-size: 45px;
   font-weight: normal;
+}
+@media (max-width: 1000px) {
+  .s-3 h2 {
+    width: 80%;
+    text-align: center;
+  }
 }
 .s-3 .cards {
   display: flex;
@@ -133,4 +160,13 @@ body img {
 .s-3 .cards .location, .s-3 .cards .phone, .s-3 .cards .envelope {
   color: #5863f8;
   margin-right: 10px;
+}
+@media (max-width: 900px) {
+  .s-3 .cards {
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=global.css.map */

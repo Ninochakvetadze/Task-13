@@ -15,21 +15,40 @@ body {
     h2 {
         @include font (45px, normal);
         @include pseudo;
+        @media (max-width: 1000px) {
+            width: 80%;
+            text-align: center;
+        }
     }
     p {
         margin-top: 10px;
         margin-bottom: 30px;
         @include pseudo;
         @include font (20px, normal);
+        @media (max-width: 1200px) {
+            width: 90%;
+            text-align: center;
+        }
     }
     .bali {
         @include goflex;
+        @media (max-width: 900px) {
+            width: 80%;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+        }
     }
 }
 
 .s-3 {
     h2 {
         @include font (45px, normal);
+        @media (max-width: 1000px) {
+            width: 80%;
+            text-align: center;
+        }
     }
     .cards {
         @include goflex;
@@ -49,6 +68,13 @@ body {
         .location, .phone, .envelope {
             color: #5863f8;
             margin-right: 10px;
+        }
+        @media (max-width: 900px) {
+            width: 80%;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
         }
     }
 }
